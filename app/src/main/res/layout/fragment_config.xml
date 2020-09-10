@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/AppTheme"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingLeft="20dp"
+              android:paddingRight="20dp"
+              tools:context="com.nxp.nhs31xx.demo.tlogger.Fragment.StatusFragment">
+
+    <TextView
+        android:id="@+id/titleConfigTextView"
+        style="@style/HeaderTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/configFragment_label"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <TextView
+        android:id="@+id/help1TextView"
+        style="@style/TextTheme"
+        android:textStyle="italic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/configHelp_Label"/>
+
+    <TextView
+        android:id="@+id/startDelayConfigTextView"
+        style="@style/WidgetTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onStartDelayConfigTextViewClicked"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/intervalConfigTextView"
+        style="@style/WidgetTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onIntervalConfigTextViewClicked"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/runningTimeConfigTextView"
+        style="@style/WidgetTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onRunningTimeConfigTextViewClicked"
+        android:textSize="15sp"/>
+
+    <Switch
+        android:id="@+id/validationConfigSwitch"
+        style="@style/TextTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:onClick="onValidationConfigSwitchClicked"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:id="@+id/validMinimumConfigTextView"
+        style="@style/WidgetTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onValidMinimumConfigTextViewClicked"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/validMaximumConfigTextView"
+        style="@style/WidgetTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onValidMaximumConfigTextViewClicked"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/applyConfigButton"
+        style="@style/ButtonTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="onApplyConfigButtonClicked"
+        android:text="@string/applyConfig"/>
+
+    <Button
+        android:id="@+id/resetConfigButton"
+        style="@style/ButtonTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onResetConfigButtonClicked"
+        android:text="@string/resetConfig"/>
+
+</LinearLayout>

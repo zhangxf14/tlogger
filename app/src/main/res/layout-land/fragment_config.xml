@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/AppTheme"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                tools:context="com.nxp.nhs31xx.demo.tlogger.Fragment.StatusFragment">
+
+    <LinearLayout
+        android:id="@+id/firstLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toStartOf="@+id/secondView"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/titleConfigTextView"
+            style="@style/HeaderTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/configFragment_label"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <LinearLayout
+            android:id="@+id/secondLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/help2TextView"
+                style="@style/TextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:text="@string/validationEnabled_label"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/validMinimumConfigTextView"
+                style="@style/WidgetTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onValidMinimumConfigTextViewClicked"
+                android:text=""
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/validMaximumConfigTextView"
+                style="@style/WidgetTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onValidMaximumConfigTextViewClicked"
+                android:text=""
+                android:textSize="15sp"/>
+
+            <Button
+                android:id="@+id/resetConfigButton"
+                style="@style/ButtonTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onResetConfigButtonClicked"
+                android:text="@string/resetConfig"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/secondView"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="@color/nxp_blue"/>
+
+    <LinearLayout
+        android:id="@+id/thirdLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@+id/secondView"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/help1TextView"
+            style="@style/TextTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="@string/configHelp_Label"
+            android:textStyle="italic"/>
+
+        <LinearLayout
+            android:id="@+id/fourthLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/startDelayConfigTextView"
+                style="@style/WidgetTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onStartDelayConfigTextViewClicked"
+                android:text=""
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/intervalConfigTextView"
+                style="@style/WidgetTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onIntervalConfigTextViewClicked"
+                android:text=""
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/runningTimeConfigTextView"
+                style="@style/WidgetTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onRunningTimeConfigTextViewClicked"
+                android:text=""
+                android:textSize="15sp"/>
+
+            <Button
+                android:id="@+id/applyConfigButton"
+                style="@style/ButtonTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onApplyConfigButtonClicked"
+                android:text="@string/applyConfig"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<FrameLayout style="@style/AppTheme"
+             xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             tools:context="com.nxp.nhs31xx.demo.tlogger.Fragment.AboutFragment">
+
+    <TextView
+        android:id="@+id/title1TextView"
+        style="@style/HeaderTheme"
+        android:layout_gravity="center_horizontal|top"
+        android:text="@string/title1"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <TextView
+        android:id="@+id/title2TextView"
+        style="@style/HeaderTheme"
+        android:layout_gravity="center_horizontal|top"
+        android:paddingTop="30dp"
+        android:text="@string/title2"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        style="@style/HeaderTheme"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:contentDescription="@string/app_name"
+        android:onClick="onLogoImageViewClicked"/>
+
+    <TextView
+        android:id="@+id/versionTextView"
+        style="@style/TextTheme"
+        android:layout_gravity="center_horizontal|bottom"
+        android:paddingBottom="40dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <TextView
+        android:id="@+id/licenseTextView"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|bottom"
+        android:text="@string/license_label"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/nxp_blue"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/contactTextView"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:text="@string/contact_label"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/nxp_blue"
+        android:textStyle="bold"/>
+</FrameLayout>

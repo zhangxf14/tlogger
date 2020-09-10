@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/AppTheme"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:isScrollContainer="true"
+              android:orientation="vertical">
+
+    <WebView
+        android:id="@+id/acceptWebView"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"/>
+
+    <Space
+        android:layout_width="20dp"
+        android:layout_height="2dp"/>
+
+    <CheckBox
+        android:id="@+id/accept1PopupCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|bottom"
+        android:background="@color/nxp_orange"
+        android:onClick="onAccept1PopupCheckBoxClicked"
+        android:text="@string/accept1checkbox_label"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/dim_foreground_material_light"/>
+
+    <Space
+        android:layout_width="20dp"
+        android:layout_height="2dp"/>
+
+    <CheckBox
+        android:id="@+id/accept2PopupCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|bottom"
+        android:background="@color/nxp_green"
+        android:onClick="onAccept2PopupCheckBoxClicked"
+        android:text="@string/accept2checkbox_label"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/bright_foreground_material_light"/>
+
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/agreePopupButton"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:onClick="onAgreePopupButtonClicked"
+            android:text="@string/agree"/>
+
+        <Button
+            android:id="@+id/disagreePopupButton"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:enabled="true"
+            android:onClick="onDisagreePopupButtonClicked"
+            android:text="@string/disagree"/>
+    </LinearLayout>
+
+
+</LinearLayout>
